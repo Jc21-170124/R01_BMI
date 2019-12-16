@@ -24,9 +24,9 @@ namespace R01_BMI
             double ww=double.Parse(x)/100;
             double q=double.Parse(y)/100;
 
-            double a=ww/(q * q);
-            int aa=int.Parse(a);
-            answer.Text="BMI:"+aa;
+            double a=q/(ww * ww);
+            int aa=Math.Round(a,MidpointRounding.AwayFromZero);
+            answer.Text="BMI:"+a;
 
         
         }
