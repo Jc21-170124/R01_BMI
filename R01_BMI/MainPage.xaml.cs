@@ -17,12 +17,15 @@ namespace R01_BMI
         {
             InitializeComponent();
         }
-        public void OnButtonClicked(object sender, EventArgs e){
+        private void Button_Clicked(object sender, EventArgs e){
             
-            int x=Text.tall;
-            int y=Text.heavy;
-            double a=y/(tall/100 * tall/100);
-            answer.Text=a;
+            String x=sintyou.Text;
+            String y=taijuu.Text;
+            int ww=int.Parse(x);
+            int q=int.Parse(y);
+
+            double a=ww/(q/100 * q/100);
+            answer.Text="BMI:"+a;
 
         
         }
