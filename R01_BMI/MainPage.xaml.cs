@@ -25,7 +25,7 @@ namespace R01_BMI
             double q=double.Parse(y);
 
             double a=q/(ww/100 * ww/100);
-            int aa= Math.Round(a);
+            int aa= Math.Round(a,MidpointRounding.AwayFromZero);
             answer.Text="BMI:"+aa;
 
         
