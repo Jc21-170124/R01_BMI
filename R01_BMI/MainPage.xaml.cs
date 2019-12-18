@@ -21,12 +21,11 @@ namespace R01_BMI
             
             String x=sintyou.Text;
             String y=taijuu.Text;
-            double ww=double.Parse(x)/100;
-            double q=double.Parse(y)/100;
+            double ww=double.Parse(x);
+            double q=double.Parse(y);
 
-            double a=q/(ww * ww);
-           int aa;
-            aa=(int)a;
+            double a=q/(ww/100 * ww/100);
+            int aa= Math.Round(a);
             answer.Text="BMI:"+aa;
 
         
